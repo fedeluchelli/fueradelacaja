@@ -1,0 +1,30 @@
+$color-fondo1: #8f00ff;
+$color-fondo: linear-gradient(to bottom, #8f00ff, #f155ff, #8f00ff);
+
+$color-texto: #333;
+$color-titulos: #f1fff8;
+$fuente-titulo: "abstract";
+$fuente-letras: "Arial", sans-serif;
+
+body {
+  background-color: $color-fondo1;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+
+  h1 {
+    font-size: 56px;
+    margin: 20px;
+    line-height: 100px;
+    width: 80%;
+    font-family: $fuente-titulo;
+    color: $color-titulos;
+  }
+  img {
+    height: 150px;
+  }
+}

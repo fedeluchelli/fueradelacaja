@@ -1,0 +1,17 @@
+body {
+  background-color: #8f00ff; }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px; }
+  header h1 {
+    font-size: 56px;
+    margin: 20px;
+    line-height: 100px;
+    width: 80%;
+    font-family: "abstract";
+    color: #f1fff8; }
+  header img {
+    height: 150px; }
