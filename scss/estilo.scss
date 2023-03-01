@@ -1,30 +1,167 @@
 $color-fondo1: #8f00ff;
 $color-fondo: linear-gradient(to bottom, #8f00ff, #f155ff, #8f00ff);
-
 $color-texto: #333;
 $color-titulos: #f1fff8;
 $fuente-titulo: "abstract";
-$fuente-letras: "Arial", sans-serif;
+$fuente-letras: "Inconsolata", sans-serif;
 
 body {
-  background-color: $color-fondo1;
+  background: $color-fondo1;
+  font-family: $fuente-letras;
+}
+header {
+  font-weight: bold;
+  margin-bottom: 5px;
+  .navegador {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-color: #b9b9b9;
+    padding: 10px;
+  }
+  .contenedor1 {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-size: 8px;
+      line-height: 18px;
+      font-family: $fuente-titulo;
+      background-color: $color-titulos;
+      border: solid 1px #000000;
+      padding: 5px;
+      width: 100px;
+      height: 70px;
+      text-decoration: none;
+      margin: 0;
+    }
+    a {
+      margin-left: 50px;
+      align-self: flex-end;
+      text-decoration: none;
+      font-size: 25px;
+      color: $color-texto;
+    }
+    a:hover {
+      font-size: 30px;
+      color: #ffffff;
+      transition: 0.3s;
+    }
+  }
+  .contenedor2 {
+    align-self: flex-end;
+    a {
+      text-decoration: none;
+      color: $color-texto;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    a:hover {
+      color: #ffffff;
+      transition: 0.2s;
+    }
+  }
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 1000px;
-
-  h1 {
-    font-size: 56px;
-    margin: 20px;
-    line-height: 100px;
-    width: 80%;
-    font-family: $fuente-titulo;
-    color: $color-titulos;
+main {
+  display: grid;
+  grid-template-columns: 2.6fr 0.4fr;
+  grid-template-rows: 0fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas:
+    "TITULO TITULO DERECHA"
+    "IMAGEN IMAGEN DERECHA";
+  .title {
+    grid-area: TITULO;
+    background-color: #f155ff;
+    height: 80px;
+    padding: 6px;
+    h2 {
+      font-size: 50px;
+    }
   }
-  img {
-    height: 150px;
+  .principal {
+    grid-area: IMAGEN;
+    background-color: red;
+    padding: 16px;
+    .carousel {
+      img {
+        width: 600px;
+      }
+    }
+    p {
+      font-size: 20px;
+    }
+    .imagenes {
+      img {
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+      }
+    }
+    .carousel {
+      img {
+        height: 600px;
+      }
+    }
+    .mercado {
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-auto-rows: 1fr;
+      grid-template-columns: 0.8fr 1.2fr;
+      // grid-template-rows: 2.6fr;
+      gap: 0px 0px;
+
+      .SELECCION {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .TIENDA {
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+
+        .card {
+          margin: 15px;
+        }
+      }
+    }
+  }
+  .der {
+    grid-area: DERECHA;
+    background-color: aquamarine;
+    padding: 10px;
+    h4 {
+      font-size: 25px;
+    }
+    .publi {
+      margin: 2px;
+      text-align: justify;
+      .card {
+        margin-bottom: 20px;
+        img {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+footer {
+  background-color: #b9b9b9;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  align-items: start;
+  padding: 10px;
+  margin-top: 5px;
+  height: 50px;
+  a {
+    text-decoration: none;
+    color: $color-texto;
+  }
+  a:hover {
+    font-size: 17px;
+    transition: 0.3s;
+  }
+  p {
+    color: $color-texto;
+    margin-right: 20px;
   }
 }

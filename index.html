@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./css/img/icono.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+      rel="stylesheet"
     />
     <link
       rel="stylesheet"
@@ -25,17 +32,186 @@
   </head>
   <body>
     <header>
-      <h1>fuera de la caja</h1>
+      <div class="navegador">
+        <div class="contenedor1">
+          <h1>Fuera de la CAJA</h1>
+          <a href="./views/tienda.html">Tienda</a>
+        </div>
+        <div class="contenedor2">
+          <a href="">Galería</a>
+          <a href="">Nosotros</a>
+          <a href="">Contacto</a>
+        </div>
+      </div>
     </header>
 
     <main>
-      <div></div>
-      <div></div>
+      <div class="title"><h2>Tu diccionario musical</h2></div>
+
+      <div class="principal">
+        <div
+          id="carouselExampleInterval"
+          class="carousel"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./css/img/reci4.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./css/img/reci5.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./css/img/reci1.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <h3>Esto es información</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum
+          tempore molestias quod, totam ullam autem modi quibusdam nostrum?
+          Quisquam beatae nihil commodi vero dolore corrupti ullam laudantium
+          inventore iste.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum
+          tempore molestias quod, totam ullam autem modi quibusdam nostrum?
+          Quisquam beatae nihil commodi vero dolore corrupti ullam laudantium
+          inventore iste.
+        </p>
+        <div class="imagenes">
+          <img src="./css/img/ia0.jpg" alt="" />
+          <img src="./css/img/ia2.jpg" alt="" />
+          <img src="./css/img/ia3.jpg" alt="" />
+          <img src="./css/img/ia3.jpg" alt="" />
+          <img src="./css/img/ia3.jpg" alt="" />
+          <img src="./css/img/ia3.jpg" alt="" />
+        </div>
+
+        <h3>Esto es un título para separar</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
+          quo minus autem eaque voluptate nostrum, fugiat molestias, illum optio
+          eveniet pariatur quam rerum similique dicta magni beatae
+          exercitationem incidunt. Sapiente.
+        </p>
+
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel"
+          data-bs-ride="carousel"
+        ></div>
+      </div>
+      <div class="der">
+        <h4>Anuncios</h4>
+        <div class="publi">
+          <div class="card" style="width: 18rem">
+            <a href="https://www.shure.com/es-ES"
+              ><img
+                src="./css/img/avatar_shure.jpg"
+                class="card-img-top"
+                alt="..."
+            /></a>
+            <div class="card-body">
+              <p class="card-text">
+                No te pierdas nuestros tips para vocalistas y haz el
+                cuestionario SHURE MIC MATCH para encontrar el micrófono
+                perfecto para tu voz.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <a href="https://www.mercadolibre.com.ar/"
+              ><img
+                src="./css/img/avatar_mercado.png"
+                class="card-img-top"
+                alt="..."
+            /></a>
+            <div class="card-body">
+              <p class="card-text">
+                Compre productos con Envío Gratis en el día en Mercado Libre.
+                Encuentre miles de marcas y productos a precios increíbles.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <a href="https://www.coca-cola.com.ar/"
+              ><img
+                src="./css/img/avatar_cocacola.png"
+                class="card-img-top"
+                alt="..."
+            /></a>
+            <div class="card-body">
+              <p class="card-text">
+                Coca‑Cola and Partners ("Nosotros") utilizamos cookies para
+                operar nuestro sitio , para mostrarle contenido personalizado.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <a href="https://www.fravega.com/"
+              ><img
+                src="./css/img/avatar_fravega.png"
+                class="card-img-top"
+                alt="..."
+            /></a>
+            <div class="card-body">
+              <p class="card-text">
+                Ingresá a Frávega.com y Encontrá Los Mejores Productos De Todas
+                Las Marcas. Los Mejores Precios.com!
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <a href="https://www.cotodigital3.com.ar/sitios/cdigi/"
+              ><img
+                src="./css/img/avatar_coto.png"
+                class="card-img-top"
+                alt="..."
+            /></a>
+            <div class="card-body">
+              <p class="card-text">
+                Supermercados Coto es la cadena líder de Supermercados e
+                Hipermercados de la Argentina, con más de 120 sucursales en el
+                país.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer><p>Copyright</p></footer>
+    <footer>
+      <p>Copyright</p>
+      <a href="./index.html"><p>volver arriba</p></a>
+      <a href="mailto: luchellifederico@gmail.com">Email</a>
+    </footer>
     <script src="./js/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,17 +1,120 @@
 body {
-  background-color: #8f00ff; }
+  background: #8f00ff;
+  font-family: "Inconsolata", sans-serif; }
 
 header {
+  font-weight: bold;
+  margin-bottom: 5px; }
+  header .navegador {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-color: #b9b9b9;
+    padding: 10px; }
+  header .contenedor1 {
+    display: flex;
+    justify-content: space-between; }
+    header .contenedor1 h1 {
+      font-size: 8px;
+      line-height: 18px;
+      font-family: "abstract";
+      background-color: #f1fff8;
+      border: solid 1px #000000;
+      padding: 5px;
+      width: 100px;
+      height: 70px;
+      text-decoration: none;
+      margin: 0; }
+    header .contenedor1 a {
+      margin-left: 50px;
+      align-self: flex-end;
+      text-decoration: none;
+      font-size: 25px;
+      color: #333; }
+    header .contenedor1 a:hover {
+      font-size: 30px;
+      color: #ffffff;
+      transition: 0.3s; }
+  header .contenedor2 {
+    align-self: flex-end; }
+    header .contenedor2 a {
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
+      margin-right: 10px; }
+    header .contenedor2 a:hover {
+      color: #ffffff;
+      transition: 0.2s; }
+
+main {
+  display: grid;
+  grid-template-columns: 2.6fr 0.4fr;
+  grid-template-rows: 0fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas: "TITULO TITULO DERECHA" "IMAGEN IMAGEN DERECHA"; }
+  main .title {
+    grid-area: TITULO;
+    background-color: #f155ff;
+    height: 80px;
+    padding: 6px; }
+    main .title h2 {
+      font-size: 50px; }
+  main .principal {
+    grid-area: IMAGEN;
+    background-color: red;
+    padding: 16px; }
+    main .principal .carousel img {
+      width: 600px; }
+    main .principal p {
+      font-size: 20px; }
+    main .principal .imagenes img {
+      width: 300px;
+      height: 300px;
+      margin: 5px; }
+    main .principal .carousel img {
+      height: 600px; }
+    main .principal .mercado {
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-auto-rows: 1fr;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 0px 0px; }
+      main .principal .mercado .SELECCION {
+        grid-area: 1 / 1 / 2 / 2; }
+      main .principal .mercado .TIENDA {
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex; }
+        main .principal .mercado .TIENDA .card {
+          margin: 15px; }
+  main .der {
+    grid-area: DERECHA;
+    background-color: aquamarine;
+    padding: 10px; }
+    main .der h4 {
+      font-size: 25px; }
+    main .der .publi {
+      margin: 2px;
+      text-align: justify; }
+      main .der .publi .card {
+        margin-bottom: 20px; }
+        main .der .publi .card img {
+          padding: 10px; }
+
+footer {
+  background-color: #b9b9b9;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 1000px; }
-  header h1 {
-    font-size: 56px;
-    margin: 20px;
-    line-height: 100px;
-    width: 80%;
-    font-family: "abstract";
-    color: #f1fff8; }
-  header img {
-    height: 150px; }
+  justify-content: space-between;
+  font-size: 15px;
+  align-items: start;
+  padding: 10px;
+  margin-top: 5px;
+  height: 50px; }
+  footer a {
+    text-decoration: none;
+    color: #333; }
+  footer a:hover {
+    font-size: 17px;
+    transition: 0.3s; }
+  footer p {
+    color: #333;
+    margin-right: 20px; }
