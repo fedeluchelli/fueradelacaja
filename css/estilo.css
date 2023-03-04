@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     align-items: end;
     background-color: #b9b9b9;
-    padding: 10px; }
+    padding: 25px; }
   header .contenedor1 {
     display: flex;
     justify-content: space-between; }
@@ -54,11 +54,10 @@ main {
   grid-template-areas: "TITULO TITULO DERECHA" "IMAGEN IMAGEN DERECHA"; }
   main .title {
     grid-area: TITULO;
-    background-color: #f155ff;
-    height: 80px;
-    padding: 6px; }
+    background-color: #f155ff; }
     main .title h2 {
-      font-size: 50px; }
+      font-size: 50px;
+      padding: 25px; }
   main .principal {
     grid-area: IMAGEN;
     background-color: red;
@@ -73,19 +72,69 @@ main {
       margin: 5px; }
     main .principal .carousel img {
       height: 600px; }
-    main .principal .mercado {
-      display: grid;
-      grid-auto-columns: 1fr;
-      grid-auto-rows: 1fr;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 0px 0px; }
-      main .principal .mercado .SELECCION {
-        grid-area: 1 / 1 / 2 / 2; }
-      main .principal .mercado .TIENDA {
-        grid-area: 1 / 2 / 2 / 3;
-        display: flex; }
-        main .principal .mercado .TIENDA .card {
-          margin: 15px; }
+  main .secundario {
+    grid-area: IMAGEN;
+    background-color: red; }
+    main .secundario .separador1 {
+      display: flex;
+      align-items: center; }
+      main .secundario .separador1 h2 {
+        font-size: 30px;
+        background-color: #8f00ff;
+        padding: 25px; }
+      main .secundario .separador1 img {
+        width: 90px;
+        animation-name: rotacion;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 8s; }
+
+@keyframes rotacion {
+  0% {
+    rotate: 0deg; }
+  100% {
+    rotate: 360deg; } }
+    main .secundario .separador2 {
+      display: flex;
+      align-items: center; }
+      main .secundario .separador2 h2 {
+        font-size: 30px;
+        background-color: #8f00ff;
+        padding: 25px; }
+      main .secundario .separador2 img {
+        width: 200px; }
+    main .secundario p {
+      font-size: 20px; }
+    main .secundario .mercado {
+      display: flex;
+      padding: 15px;
+      flex-wrap: wrap;
+      margin: 15px;
+      justify-content: center; }
+      main .secundario .mercado .TIENDA {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15px;
+        justify-content: center;
+        width: 80%; }
+        main .secundario .mercado .TIENDA .card {
+          padding: 15px;
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          margin: 15px;
+          position: relative;
+          opacity: 0.95;
+          transition: opacity 0.2s ease-in-out;
+          flex-basis: 24%; }
+          main .secundario .mercado .TIENDA .card h5 {
+            font-weight: bold; }
+          main .secundario .mercado .TIENDA .card .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; }
+        main .secundario .mercado .TIENDA .card:hover {
+          opacity: 1; }
   main .der {
     grid-area: DERECHA;
     background-color: aquamarine;

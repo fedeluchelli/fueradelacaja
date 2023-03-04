@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     align-items: end;
     background-color: #b9b9b9;
-    padding: 10px;
+    padding: 25px;
   }
   .contenedor1 {
     display: flex;
@@ -73,10 +73,10 @@ main {
   .title {
     grid-area: TITULO;
     background-color: #f155ff;
-    height: 80px;
-    padding: 6px;
+    // height: 80px;
     h2 {
       font-size: 50px;
+      padding: 25px;
     }
   }
   .principal {
@@ -103,27 +103,91 @@ main {
         height: 600px;
       }
     }
-    .mercado {
-      display: grid;
-      grid-auto-columns: 1fr;
-      grid-auto-rows: 1fr;
-      grid-template-columns: 0.8fr 1.2fr;
-      // grid-template-rows: 2.6fr;
-      gap: 0px 0px;
+  }
 
-      .SELECCION {
-        grid-area: 1 / 1 / 2 / 2;
+  .secundario {
+    grid-area: IMAGEN;
+    background-color: red;
+    .separador1 {
+      display: flex;
+      align-items: center;
+      h2 {
+        font-size: 30px;
+        background-color: #8f00ff;
+        padding: 25px;
       }
+      img {
+        width: 90px;
+        animation-name: rotacion;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-duration: 8s;
+      }
+      @keyframes rotacion {
+        0% {
+          rotate: 0deg;
+        }
+        100% {
+          rotate: 360deg;
+        }
+      }
+    }
+    .separador2 {
+      display: flex;
+      align-items: center;
+      h2 {
+        font-size: 30px;
+        background-color: #8f00ff;
+        padding: 25px;
+      }
+      img {
+        width: 200px;
+      }
+    }
+    p {
+      font-size: 20px;
+    }
+    .mercado {
+      display: flex;
+      padding: 15px;
+      flex-wrap: wrap;
+      margin: 15px;
+      justify-content: center;
       .TIENDA {
-        grid-area: 1 / 2 / 2 / 3;
         display: flex;
+        flex-wrap: wrap;
+        margin: 15px;
+        justify-content: center;
+        width: 80%;
 
         .card {
+          padding: 15px;
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
           margin: 15px;
+
+          position: relative;
+          opacity: 0.95;
+          transition: opacity 0.2s ease-in-out;
+          flex-basis: 24%;
+          h5 {
+            font-weight: bold;
+          }
+
+          .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+          }
+        }
+        .card:hover {
+          opacity: 1;
         }
       }
     }
   }
+
   .der {
     grid-area: DERECHA;
     background-color: aquamarine;
