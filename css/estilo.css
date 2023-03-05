@@ -1,87 +1,146 @@
 body {
-  background: #8f00ff;
   font-family: "Inconsolata", sans-serif; }
 
-header {
+.head {
   font-weight: bold;
-  margin-bottom: 5px; }
-  header .navegador {
+  position: sticky;
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+  .head .navegador {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    background-color: #b9b9b9;
-    padding: 25px; }
-  header .contenedor1 {
+    background-color: #5d5c5c;
+    padding: 15px; }
+  .head .contenedor1 {
     display: flex;
     justify-content: space-between; }
-    header .contenedor1 h1 {
+    .head .contenedor1 h1 {
       font-size: 8px;
       line-height: 18px;
       font-family: "abstract";
-      background-color: #f1fff8;
+      background-color: #ffffff;
       border: solid 1px #000000;
       padding: 5px;
       width: 100px;
       height: 70px;
       text-decoration: none;
       margin: 0; }
-    header .contenedor1 a {
+    .head .contenedor1 h1:hover {
+      border: #ffffff;
+      background-color: #333;
+      border: solid 1px #ffffff; }
+    .head .contenedor1 a {
       margin-left: 50px;
       align-self: flex-end;
       text-decoration: none;
       font-size: 25px;
       color: #333; }
-    header .contenedor1 a:hover {
+    .head .contenedor1 a:hover {
       font-size: 30px;
       color: #ffffff;
       transition: 0.3s; }
-  header .contenedor2 {
-    align-self: flex-end; }
-    header .contenedor2 a {
-      text-decoration: none;
-      color: #333;
-      font-size: 20px;
-      margin-right: 10px; }
-    header .contenedor2 a:hover {
-      color: #ffffff;
-      transition: 0.2s; }
+  .head .title h2 {
+    font-family: "abstract";
+    font-size: 1.5rem; }
+
+header .content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #5d5c5c; }
+  header .content .fueraCaja h1 {
+    font-size: 2.5rem;
+    line-height: 80px;
+    font-family: "abstract";
+    background-color: #ffffff;
+    border: solid 1px #000000;
+    padding: 5px;
+    width: 500px;
+    height: 300px;
+    margin: 0; }
+  header .content .fueraCaja h1:hover {
+    background-color: #333;
+    border: solid 1px #ffffff; }
+  header .content .fueraCaja a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #333; }
+  header .content .fueraCaja a:hover {
+    font-size: 30px;
+    color: #ffffff;
+    transition: 0.3s; }
+  header .content .box-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center; }
+    header .content .box-container a {
+      text-decoration: none; }
+    header .content .box-container .box {
+      height: 11rem;
+      width: 17rem;
+      background: #ffffff;
+      border: solid 1px #000000;
+      text-align: center;
+      margin: 2rem;
+      padding: 20px; }
+      header .content .box-container .box h3 {
+        font-size: 10px;
+        font-weight: bold;
+        color: #9c27b0;
+        text-decoration: none;
+        font-family: "abstract"; }
+      header .content .box-container .box p {
+        padding: 10px 15px;
+        font-size: 16px;
+        color: #2d2c2c; }
+    header .content .box-container .box:hover {
+      background: #333;
+      border: solid 1px #ffffff;
+      transition: 0.3s;
+      color: #ffffff; }
+      header .content .box-container .box:hover h3 {
+        color: #ffffff; }
+      header .content .box-container .box:hover p {
+        color: #ffffff; }
+  header .content .nombre {
+    margin-top: 200px;
+    color: #2d2c2c; }
 
 main {
-  display: grid;
-  grid-template-columns: 2.6fr 0.4fr;
-  grid-template-rows: 0fr 1fr;
-  gap: 5px 5px;
-  grid-template-areas: "TITULO TITULO DERECHA" "IMAGEN IMAGEN DERECHA"; }
-  main .title {
-    grid-area: TITULO;
-    background-color: #f155ff; }
-    main .title h2 {
-      font-size: 50px;
-      padding: 25px; }
-  main .principal {
-    grid-area: IMAGEN;
-    background-color: red;
-    padding: 16px; }
-    main .principal .carousel img {
-      width: 600px; }
-    main .principal p {
-      font-size: 20px; }
-    main .principal .imagenes img {
-      width: 300px;
-      height: 300px;
-      margin: 5px; }
-    main .principal .carousel img {
-      height: 600px; }
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  main h2 {
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+    color: #ffffff;
+    font-family: "abstract";
+    line-height: 18px;
+    margin: 50px; }
   main .secundario {
     grid-area: IMAGEN;
-    background-color: red; }
+    background-color: #2d2c2c;
+    align-items: center; }
     main .secundario .separador1 {
       display: flex;
-      align-items: center; }
+      margin-top: 100px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
       main .secundario .separador1 h2 {
-        font-size: 30px;
-        background-color: #8f00ff;
-        padding: 25px; }
+        color: #8b8b8d;
+        font-size: 10px;
+        padding: 25px;
+        font-family: "abstract"; }
       main .secundario .separador1 img {
         width: 90px;
         animation-name: rotacion;
@@ -96,20 +155,38 @@ main {
     rotate: 360deg; } }
     main .secundario .separador2 {
       display: flex;
-      align-items: center; }
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
       main .secundario .separador2 h2 {
-        font-size: 30px;
-        background-color: #8f00ff;
-        padding: 25px; }
+        font-size: 10px;
+        padding: 25px;
+        color: #8b8b8d;
+        font-family: "abstract"; }
       main .secundario .separador2 img {
         width: 200px; }
+    main .secundario .separador3 {
+      display: flex;
+      margin-top: 100px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px; }
+      main .secundario .separador3 h2 {
+        color: #8b8b8d;
+        font-size: 10px;
+        padding: 25px;
+        font-family: "abstract"; }
+      main .secundario .separador3 img {
+        width: 90px; }
     main .secundario p {
       font-size: 20px; }
+    main .secundario .fondo_diferente {
+      background: #171717; }
     main .secundario .mercado {
       display: flex;
       padding: 15px;
       flex-wrap: wrap;
-      margin: 15px;
       justify-content: center; }
       main .secundario .mercado .TIENDA {
         display: flex;
@@ -135,34 +212,61 @@ main {
             justify-content: flex-end; }
         main .secundario .mercado .TIENDA .card:hover {
           opacity: 1; }
-  main .der {
-    grid-area: DERECHA;
-    background-color: aquamarine;
-    padding: 10px; }
-    main .der h4 {
-      font-size: 25px; }
-    main .der .publi {
-      margin: 2px;
-      text-align: justify; }
-      main .der .publi .card {
-        margin-bottom: 20px; }
-        main .der .publi .card img {
-          padding: 10px; }
+  main .title {
+    text-align: center; }
+  main .contenedor {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2.8fr 0.2fr;
+    grid-template-areas: "IMAGEN IMAGEN DERECHA"; }
+    main .contenedor .principal {
+      grid-area: IMAGEN;
+      padding: 16px; }
+      main .contenedor .principal .carousel img {
+        width: 600px; }
+      main .contenedor .principal p {
+        font-size: 20px; }
+      main .contenedor .principal .imagenes img {
+        width: 300px;
+        height: 300px;
+        margin: 5px; }
+      main .contenedor .principal .carousel img {
+        height: 600px; }
+      main .contenedor .principal .contenedor1 {
+        background-color: #9c27b0; }
+      main .contenedor .principal .contenedor2 {
+        background-color: #fe1a27; }
+    main .contenedor .der {
+      grid-area: DERECHA;
+      padding: 10px; }
+      main .contenedor .der h4 {
+        font-size: 25px; }
+      main .contenedor .der .publi {
+        margin: 2px;
+        text-align: justify; }
+        main .contenedor .der .publi .card {
+          margin-bottom: 20px; }
+          main .contenedor .der .publi .card img {
+            padding: 10px; }
+  main .tercer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; }
 
 footer {
-  background-color: #b9b9b9;
+  background-color: #5d5c5c;
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 20px;
   align-items: start;
   padding: 10px;
-  margin-top: 5px;
-  height: 50px; }
+  height: 60px; }
   footer a {
     text-decoration: none;
     color: #333; }
   footer a:hover {
-    font-size: 17px;
+    font-size: 25px;
     transition: 0.3s; }
   footer p {
     color: #333;
