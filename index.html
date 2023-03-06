@@ -4,55 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ícono página -->
     <link rel="icon" type="image/x-icon" href="./css/img/icono.png" />
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="./css/estilo.css" />
     <style>
       @font-face {
         font-family: "abstract";
         src: url("./ABSTRACT.TTF");
       }
     </style>
+    <!-- Estilo Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/estilo.css" />
+
     <title>fueraDelaCaja</title>
   </head>
   <body>
     <header>
       <section class="content sau">
         <div class="fueraCaja">
-          <a href="./index.html"><h1>Fuera de la CAJA</h1></a>
+          <a href="./index.html"
+            ><h1 class="wow animate__animated animate__slideInLeft">
+              Fuera de la CAJA
+            </h1></a
+          >
         </div>
         <div class="box-container">
           <a href="./views/tienda.html">
             <div class="box">
               <h3>Tienda</h3>
-              <p>labore molestias consectetur veniam</p>
+              <p>Vinilos <br />Instrumentos <br />Accesorios</p>
             </div></a
           >
-          <a href="./views/galería.html"
+          <a href="./views/galeria.html"
             ><div class="box">
               <h3>Galería</h3>
-              <p>labore molestias consectetur veniam</p>
+              <p>Rock <br />Jazz <br />Rap</p>
             </div></a
           >
-          <a href="./views/"
+          <a href="./views/contacto.html"
             ><div class="box">
               <h3>Contacto</h3>
-              <p>labore molestias consectetur veniam</p>
+              <p>Promociones <br />Diseños <br />Presupuestos</p>
             </div></a
           >
         </div>
@@ -61,196 +71,224 @@
     </header>
 
     <main>
-      <div class="title"><h2>lugar musical</h2></div>
-      <div class="contenedor">
-        <div class="principal">
-          <div
-            id="carouselExampleInterval"
-            class="carousel"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img
-                  src="./css/img/reci3.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img
-                  src="./css/img/reci5.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./css/img/reci1.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <div class="contenedor1">
-            <h3>Esto es información</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum
-              tempore molestias quod, totam ullam autem modi quibusdam nostrum?
-              Quisquam beatae nihil commodi vero dolore corrupti ullam
-              laudantium inventore iste.
-            </p>
-          </div>
-
-          <div class="contenedor2">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum
-              tempore molestias quod, totam ullam autem modi quibusdam nostrum?
-              Quisquam beatae nihil commodi vero dolore corrupti ullam
-              laudantium inventore iste.
-            </p>
-            <div class="imagenes">
-              <img src="./css/img/rap1.jpg" alt="" />
-              <img src="./css/img/rock01.jpeg" alt="" />
-              <img src="./css/img/ia3.jpg" alt="" />
-              <img src="./css/img/ia3.jpg" alt="" />
-              <img src="./css/img/ia3.jpg" alt="" />
-              <img src="./css/img/ia3.jpg" alt="" />
-            </div>
-
-            <h3>Esto es un título para separar</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Recusandae quo minus autem eaque voluptate nostrum, fugiat
-              molestias, illum optio eveniet pariatur quam rerum similique dicta
-              magni beatae exercitationem incidunt. Sapiente.
-            </p>
-          </div>
+      <div class="title">
+        <h2>lugar musical</h2>
+        <h3>cantantes</h3>
+        <div class="ima">
+          <img src="./css/img/artistas/mus1.jpg" alt="" />
+          <img src="./css/img/artistas/mus2.jpg" alt="" />
+          <img src="./css/img/artistas/rap2.jpg" alt="" />
+          <img src="./css/img/artistas/rock0.jpg" alt="" />
         </div>
-        <div class="der">
-          <h4>Anuncios</h4>
-          <div class="publi">
-            <div class="card" style="width: 18rem">
-              <a href="https://www.shure.com/es-ES"
-                ><img
-                  src="./css/img/avatar_shure.jpg"
-                  class="card-img-top"
-                  alt="..."
-              /></a>
-              <div class="card-body">
-                <p class="card-text">
-                  No te pierdas nuestros tips para vocalistas y haz el
-                  cuestionario SHURE MIC MATCH para encontrar el micrófono
-                  perfecto para tu voz.
-                </p>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <a href="https://www.mercadolibre.com.ar/"
-                ><img
-                  src="./css/img/avatar_mercado.png"
-                  class="card-img-top"
-                  alt="..."
-              /></a>
-              <div class="card-body">
-                <p class="card-text">
-                  Compre productos con Envío Gratis en el día en Mercado Libre.
-                  Encuentre miles de marcas y productos a precios increíbles.
-                </p>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <a href="https://www.coca-cola.com.ar/"
-                ><img
-                  src="./css/img/avatar_cocacola.png"
-                  class="card-img-top"
-                  alt="..."
-              /></a>
-              <div class="card-body">
-                <p class="card-text">
-                  Coca‑Cola and Partners ("Nosotros") utilizamos cookies para
-                  operar nuestro sitio , para mostrarle contenido personalizado.
-                </p>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <a href="https://www.fravega.com/"
-                ><img
-                  src="./css/img/avatar_fravega.png"
-                  class="card-img-top"
-                  alt="..."
-              /></a>
-              <div class="card-body">
-                <p class="card-text">
-                  Ingresá a Frávega.com y Encontrá Los Mejores Productos De
-                  Todas Las Marcas. Los Mejores Precios.com!
-                </p>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem">
-              <a href="https://www.cotodigital3.com.ar/sitios/cdigi/"
-                ><img
-                  src="./css/img/avatar_coto.png"
-                  class="card-img-top"
-                  alt="..."
-              /></a>
-              <div class="card-body">
-                <p class="card-text">
-                  Supermercados Coto es la cadena líder de Supermercados e
-                  Hipermercados de la Argentina, con más de 120 sucursales en el
-                  país.
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="imaG">
+          <h3>guitarras</h3>
+          <img src="./css/img/artistas/mus20.png" alt="" />
+        </div>
+        <h3>Grupos</h3>
+        <div class="ima">
+          <img src="./css/img/artistas/mus12.png" alt="" />
+          <img src="./css/img/artistas/mus7.jpg" alt="" />
+          <img src="./css/img/artistas/mus10.jpg" alt="" />
+          <img src="./css/img/artistas/mus13.png" alt="" />
         </div>
       </div>
-      <div class="tercer">
-        <div class="title"><h2>Recitales</h2></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut soluta
-          similique quia reprehenderit eligendi aliquam. Sit odio impedit
-          quibusdam. Velit corporis, optio debitis quidem ex ipsam rerum dolorem
-          autem sequi.
-        </p>
-        <a href="#" class="btn">Saber mas</a>
+
+      <div class="centrarContenedor">
+        <h3>recitales</h3>
+        <div class="contenedor">
+          <div class="principal">
+            <div
+              id="carouselExampleInterval"
+              class="carousel"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img
+                    src="./css/img/reci3.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="./css/img/reci5.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./css/img/reci1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="contenedor1">
+              <h3>inicios</h3>
+              <p>
+                La música en vivo en bares y locales pequeños ha existido desde
+                hace mucho tiempo, aunque sus orígenes no están del todo claros.
+                Se cree que la práctica se remonta al siglo XIX, cuando los
+                bares y salones de baile contrataban a músicos locales para
+                tocar música en vivo para sus clientes. En la década de 1920,
+                durante la era del jazz, los bares y clubes de Nueva Orleans y
+                Chicago comenzaron a ser conocidos por su música en vivo. <br />
+                A medida que la música evolucionó, también lo hizo la cultura de
+                los bares y la música en vivo. En la década de 1950, la música
+                rock and roll comenzó a ganar popularidad y muchos bares y
+                clubes comenzaron a presentar bandas de rock locales en sus
+                escenarios. Esto se convirtió en una parte importante de la
+                cultura juvenil de la época, y los bares y clubes se
+                convirtieron en lugares de reunión para los jóvenes que querían
+                escuchar música en vivo y socializar.
+              </p>
+              <div class="contenedor_imagen">
+                <img src="./css/img/estadios/est1.png" alt="" />
+                <img src="./css/img/estadios/est13.png" alt="" />
+                <img src="./css/img/estadios/est10.png" alt="" />
+                <img src="./css/img/estadios/est2.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="der">
+            <h4>Anuncios</h4>
+            <div class="publi">
+              <div class="card" style="width: 18rem">
+                <a href="https://www.shure.com/es-ES"
+                  ><img
+                    src="./css/img/avatar_shure.jpg"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <p class="card-text">
+                    No te pierdas nuestros tips para vocalistas y haz el
+                    cuestionario SHURE MIC MATCH para encontrar el micrófono
+                    perfecto para tu voz.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <a href="https://www.mercadolibre.com.ar/"
+                  ><img
+                    src="./css/img/avatar_mercado.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <p class="card-text">
+                    Compre productos con Envío Gratis en el día en Mercado
+                    Libre. Encuentre miles de marcas y productos a precios
+                    increíbles.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <a href="https://www.coca-cola.com.ar/"
+                  ><img
+                    src="./css/img/avatar_cocacola.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <p class="card-text">
+                    Coca‑Cola and Partners ("Nosotros") utilizamos cookies para
+                    operar nuestro sitio , para mostrarle contenido
+                    personalizado.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <a href="https://www.fravega.com/"
+                  ><img
+                    src="./css/img/avatar_fravega.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <p class="card-text">
+                    Ingresá a Frávega.com y Encontrá Los Mejores Productos De
+                    Todas Las Marcas. Los Mejores Precios.com!
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <a href="https://www.cotodigital3.com.ar/sitios/cdigi/"
+                  ><img
+                    src="./css/img/avatar_coto.png"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <p class="card-text">
+                    Supermercados Coto es la cadena líder de Supermercados e
+                    Hipermercados de la Argentina, con más de 120 sucursales en
+                    el país.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contenedor_mas">
+          <h3>masificación</h3>
+          <p>
+            El fenómeno de las bandas tocando en estadios y lugares masivos se
+            puede remontar a la década de 1960, cuando grupos como The Beatles,
+            The Rolling Stones y The Who comenzaron a llenar estadios y arenas
+            de conciertos en todo el mundo. <br />
+            En ese momento, la música rock estaba en su apogeo y estas bandas
+            eran enormemente populares entre los jóvenes de todo el mundo. A
+            medida que la década de 1970 avanzaba, más bandas comenzaron a
+            seguir el ejemplo de estas pioneras y a tocar en estadios y lugares
+            masivos. Grupos como Led Zeppelin, Pink Floyd, Queen y AC/DC, entre
+            muchos otros, establecieron nuevos récords de asistencia en todo el
+            mundo y se convirtieron en algunos de los artistas más grandes y
+            reconocidos de la historia de la música. <br />
+          </p>
+          <div class="contenedor_imagen">
+            <img src="./css/img/estadios/est4.jpg" alt="" />
+            <img src="./css/img/estadios/est5.jpeg" alt="" />
+            <img src="./css/img/estadios/est6.jpg" alt="" />
+            <img src="./css/img/estadios/est11.png" alt="" />
+          </div>
+        </div>
       </div>
     </main>
     <footer>
-      <p>Copyright</p>
+      <i>© Copyright</i>
       <a href="./index.html"><p>volver arriba</p></a>
       <a href="mailto: luchellifederico@gmail.com">Email</a>
     </footer>
-    <script src="./js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

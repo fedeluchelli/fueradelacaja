@@ -4,8 +4,6 @@ $color-titulos: #ffffff;
 $fuente-titulo: "abstract";
 $fuente-letras: "Inconsolata", sans-serif;
 
-// $color1_navy: #1e2c39;
-
 $color1_navy: #2d2c2c;
 $color2_azul: #324151;
 $color3_gris: #8b8b8d;
@@ -14,6 +12,8 @@ $color5_brow: #820f15;
 
 body {
   font-family: $fuente-letras;
+  margin: 0;
+  padding: 0;
 }
 .head {
   font-weight: bold;
@@ -24,13 +24,14 @@ body {
   .navegador {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     background-color: #5d5c5c;
-    padding: 15px;
+    padding: 5px;
   }
   .contenedor1 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     h1 {
       font-size: 8px;
       line-height: 18px;
@@ -49,7 +50,7 @@ body {
       border: solid 1px $color-titulos;
     }
     a {
-      margin-left: 50px;
+      margin-left: 20px;
       align-self: flex-end;
       text-decoration: none;
       font-size: 25px;
@@ -62,9 +63,26 @@ body {
     }
   }
   .title {
+    display: flex;
+    align-items: center;
     h2 {
       font-family: $fuente-titulo;
       font-size: 1.5rem;
+    }
+  }
+  .contenedor2 {
+    margin-right: 20px;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 20px;
+    }
+    a:hover {
+      color: #fe1a27;
+      transition: 0.3s;
     }
   }
 }
@@ -125,12 +143,12 @@ header {
         h3 {
           font-size: 10px;
           font-weight: bold;
-          color: #9c27b0;
+          color: $color-texto;
           text-decoration: none;
           font-family: $fuente-titulo;
         }
         p {
-          padding: 10px 15px;
+          padding: 20px 15px;
           font-size: 16px;
           color: #2d2c2c;
         }
@@ -155,7 +173,7 @@ header {
   }
 }
 main {
-  background-color: #171717;
+  background-color: #5d5c5c;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -281,89 +299,283 @@ main {
     }
   }
   .title {
+    display: flex;
+    align-items: center;
     text-align: center;
-  }
-  .contenedor {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 2.8fr 0.2fr;
-    grid-template-areas: "IMAGEN IMAGEN DERECHA";
-
-    .principal {
-      grid-area: IMAGEN;
-      padding: 16px;
-      .carousel {
-        img {
-          width: 600px;
-        }
-      }
-      p {
-        font-size: 20px;
-      }
-      .imagenes {
-        img {
-          width: 300px;
-          height: 300px;
-          margin: 5px;
-        }
-      }
-      .carousel {
-        img {
-          height: 600px;
-        }
-      }
-      .contenedor1 {
-        background-color: #9c27b0;
-      }
-
-      .contenedor2 {
-        background-color: #fe1a27;
+    flex-direction: column;
+    background-color: #171717;
+    width: 100%;
+    h3 {
+      font-size: 12px;
+      font-family: $fuente-titulo;
+      margin: 50px;
+      color: $color-titulos;
+    }
+    img {
+      width: 700px;
+      height: 380px;
+      margin: 10px;
+    }
+    .ima {
+      width: 80%;
+      margin: 50px;
+    }
+    .imaG {
+      margin: 50px;
+      img {
+        width: 1000px;
+        height: 50%;
       }
     }
+  }
+  .centrarContenedor {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    h3 {
+      font-family: $fuente-titulo;
+      margin: 50px;
+    }
+    .contenedor {
+      width: 80%;
+      display: grid;
+      grid-template-columns: 2fr 0.5fr;
+      grid-template-areas: "IMAGEN DERECHA";
 
-    .der {
-      grid-area: DERECHA;
-      padding: 10px;
-      h4 {
-        font-size: 25px;
-      }
-      .publi {
-        margin: 2px;
-        text-align: justify;
-        .card {
-          margin-bottom: 20px;
+      .principal {
+        grid-area: IMAGEN;
+        .carousel {
           img {
-            padding: 10px;
+            height: 550px;
+          }
+        }
+        .contenedor_imagen {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          grid-gap: 20px;
+          img {
+            width: 500px;
+            height: 300px;
+          }
+        }
+        .contenedor1 {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          text-align: justify;
+
+          h3 {
+            font-family: $fuente-titulo;
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+          p {
+            font-size: 25px;
+          }
+        }
+      }
+
+      .der {
+        grid-area: DERECHA;
+        padding: 15px;
+        h4 {
+          font-size: 25px;
+        }
+        .publi {
+          margin: 2px;
+          text-align: justify;
+          .card {
+            margin-bottom: 20px;
+            img {
+              padding: 10px;
+            }
           }
         }
       }
     }
+    .contenedor_mas {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: justify;
+      margin-bottom: 50px;
+
+      h3 {
+        font-family: $fuente-titulo;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 25px;
+      }
+      .contenedor_imagen {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px;
+        img {
+          width: 600px;
+          height: 400px;
+        }
+      }
+    }
   }
+
   .tercer {
     display: flex;
     align-items: center;
     text-align: center;
     flex-direction: column;
+    background-color: #8b8b8d;
+  }
+
+  .body_galeria {
+    background-color: #171717;
+    width: 100%;
+  }
+  .galeria {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+    h2 {
+      font-size: 12px;
+      margin-bottom: 100px;
+    }
+    img {
+      width: 800px;
+    }
+  }
+  .galeriaUltima {
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+    h2 {
+      font-size: 12px;
+    }
+    img {
+      width: 800px;
+    }
+  }
+  .body_contacto {
+    background-color: #171717;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      font-size: 12px;
+    }
+    .contacto {
+      .contacto2 {
+        color: $color-titulos;
+        margin-bottom: 50px;
+        .contacto3 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: 50px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+          }
+
+          h3 {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .divi {
+      background-color: #fe1a27;
+      height: 1px;
+      width: 30%;
+      margin: 50px;
+    }
+    .contacto_mail {
+      height: 60vh;
+      margin-bottom: 150px;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        label {
+          color: #ffffff;
+          font-size: 25px;
+          margin-bottom: 15px;
+        }
+
+        input,
+        textarea {
+          font-size: 20px;
+          margin-bottom: 20px;
+          width: 400px;
+          background-color: #000000;
+          color: $color-titulos;
+        }
+        button {
+          background-color: transparent;
+          color: white;
+          border: 2px solid white;
+        }
+      }
+    }
   }
 }
 footer {
-  background-color: #5d5c5c;
+  background-color: #171717;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
   align-items: start;
   padding: 10px;
   height: 60px;
+  i {
+    color: $color-titulos;
+  }
+
   a {
     text-decoration: none;
-    color: $color-texto;
+    color: $color-titulos;
+  }
+
+  p {
+    color: $color-titulos;
+    font-family: $fuente-titulo;
+    font-size: 10px;
+    margin-right: 20px;
   }
   a:hover {
-    font-size: 25px;
+    color: #fe1a27;
+    font-weight: bold;
     transition: 0.3s;
   }
-  p {
-    color: $color-texto;
-    margin-right: 20px;
+  p:hover {
+    color: #fe1a27;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    margin-bottom: 0;
+    font-size: 40px;
+  }
+
+  .sau {
+    height: 100vh;
+  }
+
+  .navbar {
+    display: none;
   }
 }
