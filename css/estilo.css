@@ -435,9 +435,6 @@ main {
     flex-direction: column;
     background-color: #171717;
     width: 100%; }
-    @media (max-width: 768px) {
-      main .title h2 {
-        font-size: 18px; } }
     main .title h3 {
       font-size: 12px;
       font-family: "abstract";
@@ -453,7 +450,9 @@ main {
         padding: 50px; } }
     @media (max-width: 768px) {
       main .title {
-        width: 768px; } }
+        width: 768px; }
+        main .title h2 {
+          font-size: 18px; } }
     @media (max-width: 425px) {
       main .title {
         width: 425px; }
@@ -526,28 +525,6 @@ main {
     align-items: center;
     text-align: center;
     flex-direction: column; }
-    @media (max-width: 1024px) {
-      main .centrarContenedor {
-        width: 1024px;
-        padding: 50px; } }
-    @media (max-width: 768px) {
-      main .centrarContenedor {
-        width: 768px; } }
-    @media (max-width: 425px) {
-      main .centrarContenedor {
-        width: 425px; }
-        main .centrarContenedor h3 {
-          font-size: 15px; } }
-    @media (max-width: 375px) {
-      main .centrarContenedor {
-        width: 375px; }
-        main .centrarContenedor h3 {
-          font-size: 12px; } }
-    @media (max-width: 320px) {
-      main .centrarContenedor {
-        width: 320px; }
-        main .centrarContenedor h3 {
-          font-size: 11px; } }
     main .centrarContenedor h3 {
       font-family: "abstract";
       margin: 50px; }
@@ -585,7 +562,8 @@ main {
             align-items: center;
             flex-direction: column;
             text-align: justify;
-            margin-bottom: 50px; } }
+            margin-bottom: 50px;
+            width: 1024px; } }
         @media (max-width: 768px) {
           main .centrarContenedor .contenedor .principal {
             width: 768px; } }
@@ -599,7 +577,8 @@ main {
           main .centrarContenedor .contenedor .principal {
             width: 320px; } }
         main .centrarContenedor .contenedor .principal .carousel-inner img {
-          height: 1000px; }
+          height: 1000px;
+          padding: 20px; }
           @media (max-width: 1440px) {
             main .centrarContenedor .contenedor .principal .carousel-inner img {
               height: 600px; } }
@@ -650,13 +629,17 @@ main {
           display: flex;
           align-items: center;
           flex-direction: column;
-          text-align: justify; }
+          text-align: justify;
+          padding: 20px; }
           main .centrarContenedor .contenedor .principal .contenedor1 h3 {
             font-family: "abstract";
             font-size: 20px;
             margin-bottom: 20px; }
           main .centrarContenedor .contenedor .principal .contenedor1 p {
             font-size: 25px; }
+            @media (max-width: 1024px) {
+              main .centrarContenedor .contenedor .principal .contenedor1 p {
+                padding: 50px; } }
           @media (max-width: 1024px) {
             main .centrarContenedor .contenedor .principal .contenedor1 {
               width: 1024px;
@@ -671,7 +654,8 @@ main {
               main .centrarContenedor .contenedor .principal .contenedor1 h3 {
                 font-size: 15px; }
               main .centrarContenedor .contenedor .principal .contenedor1 p {
-                font-size: 15px; } }
+                font-size: 15px;
+                padding: 0px; } }
           @media (max-width: 375px) {
             main .centrarContenedor .contenedor .principal .contenedor1 {
               width: 375px; }
@@ -701,6 +685,28 @@ main {
             margin-bottom: 20px; }
             main .centrarContenedor .contenedor .der .publi .card img {
               padding: 10px; }
+    @media (max-width: 1024px) {
+      main .centrarContenedor {
+        width: 1024px;
+        padding: 50px; } }
+    @media (max-width: 768px) {
+      main .centrarContenedor {
+        width: 768px; } }
+    @media (max-width: 425px) {
+      main .centrarContenedor {
+        width: 425px; }
+        main .centrarContenedor h3 {
+          font-size: 15px; } }
+    @media (max-width: 375px) {
+      main .centrarContenedor {
+        width: 375px; }
+        main .centrarContenedor h3 {
+          font-size: 12px; } }
+    @media (max-width: 320px) {
+      main .centrarContenedor {
+        width: 320px; }
+        main .centrarContenedor h3 {
+          font-size: 11px; } }
 
 .contenedor_mas {
   display: flex;

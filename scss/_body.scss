@@ -8,6 +8,9 @@ body {
     position: fixed;
     width: 100%;
     z-index: 100;
+
+    // Responsive
+    //
     @media (max-width: 768px) {
       width: 768px;
     }
@@ -42,6 +45,9 @@ body {
           text-decoration: none;
           margin: 0;
         }
+
+        // Responsive
+        //
         @media (max-width: 375px) {
           width: 100px;
           height: 70px;
@@ -81,6 +87,9 @@ body {
           font-family: $fuente-titulo;
           font-size: 1.5rem;
         }
+
+        // Responsive
+        //
         @media (max-width: 768px) {
           width: 768px;
           h2 {

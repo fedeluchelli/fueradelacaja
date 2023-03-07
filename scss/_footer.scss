@@ -13,16 +13,13 @@ footer {
     text-decoration: none;
     color: $color-titulos;
   }
-
   p {
     color: $color-titulos;
     font-family: $fuente-titulo;
     font-size: 10px;
     margin-right: 20px;
   }
-
   // Hover
-  //
   a:hover {
     color: #fe1a27;
     font-weight: bold;
@@ -32,6 +29,7 @@ footer {
     color: #fe1a27;
     transition: 0.3s;
   }
+
   // Responsive
   //
   @media (max-width: 768px) {
